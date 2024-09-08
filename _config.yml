@@ -1,3 +1,6 @@
+title: glikovsky公式ウェブサイト
+locale: ja_JP
+
 collections:
   authors:
     output: true
@@ -13,12 +16,16 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+      categories: "blog"
   - scope:
       path: ""
     values:
       layout: "default"
 
+permalink: /:categories/:year-:month-:day/:title
+
 plugins:
+  - jekyll-date-localization
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap

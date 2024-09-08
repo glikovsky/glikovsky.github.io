@@ -2,7 +2,7 @@
   link: /
 - name: About
   link: /about
-- name: Blog
-  link: /blog
-- name: Staff
-  link: /staff
+- name: Profile
+  link: /profile
+- name: Contact
+  link: /contact

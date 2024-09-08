@@ -1,7 +1,5 @@
 ---
-layout: default
-title: glikovsky | About
+title: このサイトについて
 ---
-# About page
-
-This page tells you a little bit about me.
+# About
+Aboutページのコンテンツです。

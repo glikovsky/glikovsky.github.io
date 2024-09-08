@@ -3,12 +3,27 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="/assets/css/styles.css">
+<link rel="stylesheet" href="/assets/css/style.css">
 {% feed_meta %}
-{% seo %}
-</head>
+{% seo %}</head>
+
 <body>
-  {% include navigation.html %}
-  {{ content }}
+
+<!-- ヘッダー部分ここから -->
+{% include header.html %}
+<!-- ヘッダー部分ここまで -->
+
+<!-- メイン部分ここから -->
+<main>
+{{ content }}
+</main>
+<!-- メイン部分ここまで -->
+
+<!-- フッター部分ここから -->
+{% include footer.html %}
+<!-- フッター部分ここまで -->
+
+<script src="/assets/js/jquery-3.7.1.min.js"></script>
+<script src="/assets/js/script.js"></script>
 </body>
 </html>
