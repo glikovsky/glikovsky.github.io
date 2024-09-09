@@ -6,8 +6,13 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+  height: 100%;
 }
 
 img {
@@ -142,13 +147,15 @@ main {
 
 /* Footer */
 footer {
+  position: sticky;
+  top: 100vh;
+  width: 100%;
   margin: 20px 0 0 0;
   padding: 15px;
   background-color: $main-bg-color;
   color: $main-text-color;
   text-align: center;
   display: block;
-  position: relative;
 }
 
 @media screen and (min-width: 768px) {

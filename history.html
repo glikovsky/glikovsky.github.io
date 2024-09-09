@@ -8,7 +8,7 @@ title: これまでの活動
 {% for concert in history %}
   <li>
     <h3>{{ concert.date | localize: '%F (%a)' }} {{ concert.title }}</h3>
-    {{ concert.exerpt }}
+    {{ concert.content }}
   </li>
 {% endfor %}
 </ul>
