@@ -4,5 +4,7 @@
   link: /about
 - name: Profile
   link: /profile
+- name: Blog
+  link: /blog
 - name: Contact
   link: /contact
