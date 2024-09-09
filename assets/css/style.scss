@@ -130,19 +130,25 @@ main {
   margin: 0 auto;
   padding: 79px 15px 0px;
   max-width: 1024px;
-  height: 100vh;
 }
 
-.blog_posts {
+.posts_list {
+  margin: 0 20px;
+}
+
+.concerts_list {
   margin: 0 20px;
 }
 
 /* Footer */
 footer {
+  margin: 20px 0 0 0;
   padding: 15px;
   background-color: $main-bg-color;
   color: $main-text-color;
   text-align: center;
+  display: block;
+  position: relative;
 }
 
 @media screen and (min-width: 768px) {

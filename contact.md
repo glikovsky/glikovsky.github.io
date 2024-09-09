@@ -1,5 +1,5 @@
 ---
 title: お問い合わせ
 ---
-# Contact
+# {{ page.title }}
 Contactページのコンテンツです。

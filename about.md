@@ -1,5 +1,5 @@
 ---
 title: このサイトについて
 ---
-# About
+# {{ page.title }}
 Aboutページのコンテンツです。

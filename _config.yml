@@ -1,17 +1,20 @@
 title: glikovsky公式ウェブサイト
 locale: ja_JP
 date_locale: ja
+future: true
 
 collections:
-  authors:
+  concerts:
     output: true
+  history:
+
 
 defaults:
   - scope:
       path: ""
-      type: "authors"
+      type: "concerts"
     values:
-      layout: "author"
+      layout: "concert"
   - scope:
       path: ""
       type: "posts"

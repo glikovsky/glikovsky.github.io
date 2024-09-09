@@ -1,0 +1,13 @@
+---
+title: 出演情報
+---
+<h1>{{ page.title }}</h1>
+
+<ul class="concerts_list">
+{% for concert in site.concerts %}
+  <li>
+    <h3><a href="{{ concert.ex_url | default: concert.url }}">{{ concert.title }}</a></h3>
+    {{ concert.content | markdownify }}
+  </li>
+{% endfor %}
+</ul>

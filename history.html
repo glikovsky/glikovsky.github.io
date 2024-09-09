@@ -1,0 +1,14 @@
+---
+title: これまでの活動
+---
+<h1>{{ page.title }}</h1>
+
+<ul class="concerts_list">
+{% assign history = site.history | sort: 'date' | reverse %}
+{% for concert in history %}
+  <li>
+    <h3>{{ concert.date | localize: '%F (%a)' }} {{ concert.title }}</h3>
+    {{ concert.exerpt }}
+  </li>
+{% endfor %}
+</ul>
