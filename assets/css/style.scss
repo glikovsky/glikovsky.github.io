@@ -106,7 +106,7 @@ header {
     width: 32px;
     height: 2px;
     border-radius: 2px;
-    background-color: lightgray;
+    background-color: $main-hover-color;
     vertical-align: top;
     transition: all 0.4s ease-in-out;
     @for $i from 1 through 3 {
@@ -117,14 +117,14 @@ header {
   }
   &.open {
     span {
-      &:first-child {
+      &:nth-child(1) {
         transform: translate(0, 7px) rotate(-135deg);
       }
       &:nth-child(2) {
         transform: rotate(-180deg);
         opacity: 0;
       }
-      &:last-child {
+      &:nth-child(3) {
         transform: translate(0, -7px) rotate(-225deg);
       }
     }
@@ -134,7 +134,7 @@ header {
 /* Main */
 main {
   margin: 0 auto;
-  padding: 79px 15px 0px;
+  padding: 79px 15px 15px;
   max-width: 1024px;
 }
 
@@ -151,7 +151,7 @@ footer {
   position: sticky;
   top: 100vh;
   width: 100%;
-  margin: 20px 0 0 0;
+  margin: 15px 0 0 0;
   padding: 15px;
   background-color: $main-bg-color;
   color: $main-text-color;
