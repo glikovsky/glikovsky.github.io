@@ -117,15 +117,11 @@ header {
   }
   &.open {
     span {
-      &:nth-child(1) {
-        transform: translate(0, 7px) rotate(-135deg);
-      }
-      &:nth-child(2) {
-        transform: rotate(-180deg);
-        opacity: 0;
-      }
-      &:nth-child(3) {
-        transform: translate(0, -7px) rotate(-225deg);
+      @for $i from 1 through 3 {
+        &:nth-child(#{$i}) {
+          transform: translate(0, calc(7px * (2 - #{$i}))) rotate(calc(-90deg - (45deg * #{$i})));
+          opacity: mod(#{$i}, 2);
+        }
       }
     }
   }
