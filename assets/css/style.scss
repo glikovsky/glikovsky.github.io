@@ -34,7 +34,7 @@ header {
   align-items: center;
   height: 64px;
   margin: 0 auto;
-  padding: 15px 0;
+  padding: 0;
 }
 
 .header_title {
@@ -45,6 +45,9 @@ header {
   text-decoration: none;
   margin: 0;
   padding: 14px 20px;
+  height: 64px;
+  display: inline-block;
+  position: absolute;
   &:hover {
     color: $main-hover-color;
   }
