@@ -1,7 +1,7 @@
 - name: Home
   link: /
-- name: Concerts
-  link: /concerts
+- name: Concert
+  link: /concert
 - name: Profile
   link: /profile
 - name: History

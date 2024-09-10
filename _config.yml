@@ -4,15 +4,14 @@ date_locale: ja
 future: true
 
 collections:
-  concerts:
+  concert:
     output: true
   history:
-
 
 defaults:
   - scope:
       path: ""
-      type: "concerts"
+      type: "concert"
     values:
       layout: "concert"
   - scope:
