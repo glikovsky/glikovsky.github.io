@@ -98,6 +98,11 @@ header {
   display: inline-block;
   width: 64px;
   height: 64px;
+  &:hover {
+    span {
+      background-color: $main-hover-color;
+    }
+  }
   span {
     position: absolute;
     top: 16px;
@@ -106,9 +111,11 @@ header {
     width: 32px;
     height: 2px;
     border-radius: 2px;
-    background-color: $main-hover-color;
+    background-color: $main-text-color;
     vertical-align: top;
-    transition: all 0.4s ease-in-out;
+    transition:
+      all 0.4s ease-in-out,
+      background-color 0s;
     @for $i from 1 through 3 {
       &:nth-child(#{$i}) {
         margin-top: calc(7px * #{$i});
@@ -119,7 +126,8 @@ header {
     span {
       @for $i from 1 through 3 {
         &:nth-child(#{$i}) {
-          transform: translate(0, calc(7px * (2 - #{$i}))) rotate(calc(-90deg - (45deg * #{$i})));
+          translate: 0 calc(7px * (2 - #{$i}));
+          rotate: calc(-45deg * (2 + #{$i}));
           opacity: mod(#{$i}, 2);
         }
       }
