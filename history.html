@@ -7,7 +7,7 @@ title: これまでの活動
 {% assign history = site.history | sort: 'date' | reverse %}
 {% for concert in history %}
   <li>
-    <h3>{{ concert.date | localize: '%F (%a)' }} {{ concert.title }}</h3>
+    <h3>{{ concert.title }}</h3>
     {{ concert.content }}
   </li>
 {% endfor %}
