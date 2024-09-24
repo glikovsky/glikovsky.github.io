@@ -7,7 +7,7 @@ title: 出演情報
 {% for concert in site.concert %}
   <li>
     <h3><a href="{{ concert.ex_url | default: concert.url }}">{{ concert.title }}</a></h3>
-    {{ concert.content | markdownify }}
+    {{ concert.content }}
   </li>
 {% endfor %}
 </ul>
